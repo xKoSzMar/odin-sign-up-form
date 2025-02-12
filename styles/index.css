@@ -1,0 +1,192 @@
+@font-face {
+  font-family: NorseBold;
+  src: url(../fonts/Norse-Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: helvetica, verdana, arial, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+
+#main {
+  display: inherit;
+  width: 67%;
+  min-height: 100%;
+  justify-content: center;
+}
+
+#baner {
+  display: inherit;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+}
+
+#baner p {
+  margin-bottom: 12px;
+  font-size: 0.75rem;
+  margin: 0 0 12px 0;
+}
+
+#baner a:hover {
+  color: hsl(0, 0%, 60%);
+  transition: all ease-in-out 0.2s;
+}
+
+#baner a:active {
+  color: hsl(0, 0%, 90%);
+  transition: all ease-in-out 0.1s;
+}
+
+#baner p,
+a {
+  color: silver;
+}
+
+#logo {
+  position: relative;
+  top: 22%;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 160px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#logo h1 {
+  font-family: NorseBold, "Courier New", Courier, monospace;
+  font-size: 6rem;
+  color: whitesmoke;
+}
+
+#form {
+  display: inherit;
+  flex: 1.7;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: #f9fafb;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.greater {
+  font-size: 1.3rem;
+}
+
+#form div {
+  width: 80%;
+}
+
+#form > div,
+p {
+  margin: 20px 0 20px 40px;
+}
+
+#form div > p {
+  margin: 0;
+}
+
+#sign_up_form {
+  width: 100%;
+  background-color: white;
+  margin: 30px 0 15px 0;
+  padding-bottom: 20px;
+  box-shadow: 0 5px 7px silver;
+}
+
+#sign_up_form label {
+  font-size: 0.7rem;
+  margin-bottom: 5px;
+}
+
+#sign_up_form input {
+  width: 200px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#sign_up_form input:valid {
+  transition: all ease-in-out 0.3s;
+  outline: none;
+  border: 1px solid green;
+}
+
+#sign_up_form input:invalid {
+  transition: all ease-in-out 0.3s;
+  outline: none;
+  border: 1px solid red;
+}
+
+#sign_up_form input:not(:focus) {
+  border: 1px solid hsl(0, 0%, 90%);
+}
+
+.form_row {
+  display: flex;
+  align-items: space-between;
+  margin: 20px 0 20px 40px;
+}
+
+.form_row > div {
+  display: inherit;
+  flex-direction: column;
+}
+
+#form button {
+  all: unset;
+  width: 200px;
+  height: 45px;
+  text-align: center;
+  background-color: #5a6e4a;
+  color: #f9fafb;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 20px 0 20px 40px;
+  box-shadow: 5px 5px 7px silver;
+}
+
+#form button:hover {
+  background-color: hsl(93, 20%, 30%);
+  transition: all ease-in-out 0.2s;
+}
+
+#form button:active {
+  background-color: hsl(93, 20%, 45%);
+  transition: all ease-in-out 0.1s;
+}
+
+#form p > a {
+  color: #5a6e4a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#form p > a:hover {
+  color: hsl(93, 20%, 30%);
+  transition: all ease-in-out 0.2s;
+}
+
+#form p > a:active {
+  color: hsl(93, 20%, 60%);
+  transition: all ease-in-out 0.2s;
+}
